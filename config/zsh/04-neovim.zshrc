@@ -3,9 +3,9 @@ if (( ! $+commands[nvim] )) ; then
     if [[ $OSTYPE == darwin* ]] ; then
         brew install neovim
     elif (( $+commands[sudo] )) ; then
-        sudo apt install neovim
+        sudo apt install neovim -y
     else
-        apt install neovim
+        apt install neovim -y
     fi
 fi
 
