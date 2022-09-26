@@ -1,0 +1,18 @@
+- clean: ["~"]
+
+- link:
+    ~/.zshrc:
+      force: true
+      path: zshrc
+    ~/.zshenv:
+      force: true
+      path: zshenv
+    ~/.config/starship.toml:
+      create: true
+      path: config/starship.toml
+      relink: true
+    ~/.config/zsh/:
+      create: true
+      glob: true
+      path: config/zsh/*
+      relink: true
