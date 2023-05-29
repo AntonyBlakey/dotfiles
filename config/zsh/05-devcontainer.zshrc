@@ -1,0 +1,1 @@
+if [ -f $HOME/.zshrc_devcontainer ] ; then source $HOME/.zshrc_devcontainer ; fi

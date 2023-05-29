@@ -16,3 +16,9 @@
       glob: true
       path: config/zsh/*
       relink: true
+    ~/bin/:
+      create: true
+      force: true
+      glob: true
+      path: bin/*
+      relink: true
