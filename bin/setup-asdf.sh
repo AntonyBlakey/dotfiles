@@ -19,4 +19,5 @@ if [[ "$OSTYPE" == darwin* ]] ; then
     hash -r
     python3 -m pip install --user --upgrade pip
     python2 -m pip install --user --upgrade pip
+    pip install neovim
 fi
