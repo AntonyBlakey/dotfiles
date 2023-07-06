@@ -1,14 +1,19 @@
+# if ! type nvim &>/dev/null; then
+#     echo "Installing neovim..."
+#     if [[ $OSTYPE == darwin* ]]; then
+#         brew install neovim
+#     elif type sudo &>/dev/null; then
+#         sudo apt update
+#         sudo apt install neovim -y
+#     else
+#         apt update
+#         apt install neovim -y
+#     fi
+# fi
+
 if ! type nvim &>/dev/null; then
     echo "Installing neovim..."
-    if [[ $OSTYPE == darwin* ]]; then
-        brew install neovim
-    elif type sudo &>/dev/null; then
-        sudo apt update
-        sudo apt install neovim -y
-    else
-        apt update
-        apt install neovim -y
-    fi
+    brew install neovim
 fi
 
 alias vi=nvim

@@ -1,4 +1,4 @@
-if [[ "$OSTYPE" == darwin* ]] ; then
+# if [[ "$OSTYPE" == darwin* ]] ; then
 
   if [[ ! -d /opt/homebrew/bin ]] ; then
       echo "Installing Homebrew..."
@@ -15,4 +15,4 @@ if [[ "$OSTYPE" == darwin* ]] ; then
       compinit
   fi
 
-fi
+# fi

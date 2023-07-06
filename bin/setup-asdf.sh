@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 if [[ "$OSTYPE" == darwin* ]] ; then
-    for plugin in python nodejs yarn erlang elixir cmake ninja rust haskell sbcl rlwrap chezscheme racket mlton java swiprolog clojure direnv solidity ; do 
+    for plugin in python nodejs yarn erlang elixir cmake ninja rust rlwrap chezscheme racket mlton java swiprolog clojure direnv solidity ; do 
         asdf plugin add $plugin
     done
 

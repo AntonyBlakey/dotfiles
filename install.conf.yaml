@@ -1,4 +1,10 @@
-- clean: ["~"]
+- clean:
+    ~/:
+      force: true
+    ~/.config/zsh:
+      recursive: true
+    ~/bin:
+      recursive: true
 
 - link:
     ~/.zshrc:
