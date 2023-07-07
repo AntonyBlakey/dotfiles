@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-for p in curl wget xz gawk jq gpg htop ; do
+for p in git git-extras git-lfs curl wget xz gawk jq gpg htop ; do
     brew install $p
 done
 

@@ -1,4 +1,5 @@
-# if [[ "$OSTYPE" == darwin* ]] ; then
+# Homebrew is not supported on aarch6 Linux
+if [[ $(uname -o) == Darwin ]] ; then
 
   if [[ ! -d /opt/homebrew/bin ]] ; then
       echo "Installing Homebrew..."
@@ -15,4 +16,4 @@
       compinit
   fi
 
-# fi
+fi
