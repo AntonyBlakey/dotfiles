@@ -12,14 +12,17 @@ done
 #fi
 
 brew tap microsoft/git
-brew install --cask git-credential-manager-core
+brew install --cask git-credential-manager
 
 # if [[ "$OSTYPE" == darwin* ]] ; then
-# brew install --cask warp
-# brew install --cask visual-studio-code
-# brew install --cask arc
-# brew install --cask telegram 
-# brew install --cask slack 
-# brew install --cask skype
 # brew install --cask 1password
+# brew install --cask notion
+# brew install --cask arc
+# brew install --cask warp
+# brew install --cask docker
+# brew install --cask visual-studio-code
+# brew install --cask skype
+# brew install --cask slack 
+# brew install --cask telegram 
+# brew install --cask racket
 # fi
