@@ -2,7 +2,7 @@ source <(fzf --zsh)
 
 source <(starship init zsh)
  
-alias cat=bat
+alias cat=batcat
 
 alias vi=nvim
 alias vim=nvim

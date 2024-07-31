@@ -2,7 +2,7 @@
 
 if [[ $OSTYPE == linux* ]] ; then
     sudo apt update
-    sudo apt install -y python3 fzf bat neovim
+    sudo apt install -y python3 bat neovim
 
     curl -sS https://starship.rs/install.sh > ./starship.sh
     sh ./starship.sh --yes
