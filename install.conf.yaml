@@ -1,10 +1,6 @@
 - clean:
     ~/:
       force: true
-    ~/.config/zsh:
-      recursive: true
-    ~/bin:
-      recursive: true
 
 - link:
     ~/.zshrc:
@@ -16,15 +12,4 @@
     ~/.config/starship.toml:
       create: true
       path: config/starship.toml
-      relink: true
-    ~/.config/zsh/:
-      create: true
-      glob: true
-      path: config/zsh/*
-      relink: true
-    ~/bin/:
-      create: true
-      force: true
-      glob: true
-      path: bin/*
       relink: true
