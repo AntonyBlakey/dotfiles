@@ -7,4 +7,6 @@ if [[ $OSTYPE == linux* ]] ; then
     curl -sS https://starship.rs/install.sh > ./starship.sh
     sh ./starship.sh --yes
     rm ./starship.sh
+
+    wget -O - -q https://github.com/junegunn/fzf/releases/download/v0.54.3/fzf-0.54.3-linux_arm64.tar.gz | tar -zxf - -C /usr/local/bin 
 fi
