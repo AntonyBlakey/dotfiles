@@ -1,11 +1,8 @@
 #!/usr/bin/env zsh
 
 if [[ $OSTYPE == linux* ]] ; then
-    if (( $+commands[sudo] )) ; then
-        sudo apt install -y python3 fzf bat neovim
-    else
-        apt install -y python3 fzf bat neovim
-    fi
+    sudo apt update
+    sudo apt install -y python3 fzf bat neovim
 
     curl -sS https://starship.rs/install.sh > ./starship.sh
     sh ./starship.sh --yes
