@@ -8,5 +8,5 @@ if [[ $OSTYPE == linux* ]] ; then
     sh ./starship.sh --yes
     rm ./starship.sh
 
-    wget -O - -q https://github.com/junegunn/fzf/releases/download/v0.54.3/fzf-0.54.3-linux_arm64.tar.gz | tar -zxf - -C /usr/local/bin 
+    wget -O - -q https://github.com/junegunn/fzf/releases/download/v0.54.3/fzf-0.54.3-linux_arm64.tar.gz | sudo tar -zxf - -C /usr/local/bin 
 fi
