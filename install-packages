@@ -4,9 +4,15 @@ if [[ $OSTYPE == linux* ]] ; then
     sudo apt update
     sudo apt install -y python3 bat neovim
 
-    curl -sS https://starship.rs/install.sh > ./starship.sh
+    wget -O starship.sh https://starship.rs/install.sh
     sh ./starship.sh --yes
     rm ./starship.sh
 
-    wget -O - -q https://github.com/junegunn/fzf/releases/download/v0.54.3/fzf-0.54.3-linux_arm64.tar.gz | sudo tar -zxf - -C /usr/local/bin 
+    wget -O fzf.tar.gz https://github.com/junegunn/fzf/releases/download/v0.54.3/fzf-0.54.3-linux_arm64.tar.gz
+    sudo tar -zxf fzf.tar.gz -C /usr/local/bin 
+    rm fzf.tar.gz
+
+    wget -O gh.deb https://github.com/cli/cli/releases/download/v2.53.0/gh_2.53.0_linux_arm64.deb
+    sudo apt install ./gh.deb
+    rm gh.deb
 fi
