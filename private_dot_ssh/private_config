@@ -1,0 +1,17 @@
+IdentityFile ~/.ssh/id_rsa
+
+Host *
+    # User antony
+    ForwardAgent yes
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentitiesOnly yes
+    # ForwardX11 no
+    # ForwardX11Trusted no
+    # ServerAliveInterval 300
+    # ServerAliveCountMax 10
+    # StrictHostKeyChecking no
+    # AddressFamily inet
+    # Compression yes
+    # ControlMaster auto
+    # ControlPath /tmp/ssh-%r@%h:%p

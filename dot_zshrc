@@ -1,0 +1,28 @@
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
+source $ZPLUG_HOME/init.zsh
+zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:2
+zplug "plugins/git", from:oh-my-zsh
+zplug "agkozak/zsh-z"
+if ! zplug check; then
+  zplug install
+fi
+zplug load
+
+alias cat=bat
+alias ls=eza
+
+alias vi=nvim
+alias vim=nvim
+export EDITOR=nvim
+
+source <(fzf --zsh)
+source <(starship init zsh)
+source <(direnv hook zsh)
+
+bindkey -v
+
+export PATH="$HOME/.asdf/shims:$PATH"
+
+fpath=($HOME/.asdf/completions $fpath)
+autoload -Uz compinit && compinit
